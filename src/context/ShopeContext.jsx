@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { products } from "../assets/assets";
 import { toast } from "react-toastify";
 
@@ -29,6 +29,7 @@ const ShopeContextProvider = ({ children }) => {
 
       return newCart;
     });
+    toast.success("Item added to cart");
   };
 
   // Total cart
@@ -49,9 +50,7 @@ const ShopeContextProvider = ({ children }) => {
   };
 
   // Debug log
-  useEffect(() => {
-   
-  }, [cartItems]);
+  useEffect(() => {}, [cartItems]);
 
   const UpdateQuantity = (itemId, size, quantity) => {
     let cartData = structuredClone(cartItems);
@@ -63,7 +62,7 @@ const ShopeContextProvider = ({ children }) => {
 
   // Cart Total
 
-  const getCartAmount =  () => {
+  const getCartAmount = () => {
     let totalAmount = 0;
 
     for (const items in cartItems) {
@@ -94,7 +93,6 @@ const ShopeContextProvider = ({ children }) => {
     getCartCount,
     UpdateQuantity,
     getCartAmount,
-  
   };
 
   return (

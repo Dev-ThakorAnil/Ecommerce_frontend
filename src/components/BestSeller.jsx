@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ShopeContext } from "../context/ShopeContext";
-import Title from "./title";
+import Title from "./Title";
 import ProductsItems from "./ProductsItems";
 
 export default function BestSeller() {

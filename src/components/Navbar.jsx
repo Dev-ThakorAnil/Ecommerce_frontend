@@ -1,6 +1,6 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { assets } from "../assets/assets";
-import { NavLink, Link, useSearchParams } from "react-router-dom";
+import { NavLink, Link} from "react-router-dom";
 import { ShopeContext } from "../context/ShopeContext";
 
 export default function Navbar() {

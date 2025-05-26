@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Title from "../components/title";
+import { useState } from "react";
+import Title from "../components/Title";
 import CartTotal from "../components/CartTotal";
 import { assets } from "../assets/assets";
 import { useNavigate } from "react-router-dom";

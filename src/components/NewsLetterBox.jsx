@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function NewsLetterBox() {
     const  handelSubmit = (e)=> {
         e.preventDefault();

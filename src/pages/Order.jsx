@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { ShopeContext } from '../context/ShopeContext'
-import Title from '../components/title'
+import Title from '../components/Title'
 
 export default function Order() {
 

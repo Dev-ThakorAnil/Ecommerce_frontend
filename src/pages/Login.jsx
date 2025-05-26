@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-
+import { useState } from 'react'
 export default function Login() {
   const [currentState, setCurrentState] = useState('Login')
 
